@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nada Amna | Cybersecurity & Software Portfolio</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons for aesthetic vectors -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Custom styles for a clean, professional feel */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f7; /* Very light background */
+            color: #1f2937; /* Dark text */
+        }
+        .text-accent {
+            color: #3b82f6; /* Professional blue for subtle accents */
+        }
+        .header-shadow {
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+        }
+        .section-padding {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+        .content-card {
+            background-color: white;
+            border: 1px solid #e5e7eb;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+        /* Custom quote style for feedback cards */
+        .quote-style {
+            position: relative;
+            padding-top: 2rem;
+        }
+        .quote-style::before {
+            content: "\201C"; /* Left double quotation mark */
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 3rem;
+            line-height: 1;
+            color: #e5e7eb;
+            font-family: Arial, sans-serif;
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm header-shadow">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="#hero" class="text-2xl font-bold text-gray-800 hover:text-accent transition duration-300">NA</a>
+            <nav class="space-x-4 sm:space-x-8 text-sm font-medium flex">
+                <a href="#about" class="hover:text-accent transition duration-300 hidden sm:block">About</a>
+                <a href="#education" class="hover:text-accent transition duration-300 hidden sm:block">Education</a>
+                <a href="#skills" class="hover:text-accent transition duration-300">Skills</a>
+                <a href="#experience" class="hover:text-accent transition duration-300">Experience</a>
+                <a href="#services" class="hover:text-accent transition duration-300">Services</a>
+                <a href="#projects" class="hover:text-accent transition duration-300 hidden sm:block">Projects</a>
+                <a href="#achievements" class="hover:text-accent transition duration-300 hidden sm:block">Achievements</a>
+                <a href="#contact" class="hover:text-accent transition duration-300">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="section-padding pt-20 md:pt-24 bg-white border-b border-gray-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-12">
+                
+                <!-- Profile Photo (Large Circular) -->
+                <div class="md:w-1/3 flex justify-center">
+                    <!-- Adjusted the image source slightly to reference the uploaded file name directly -->
+                    <img src="WhatsApp Image 2025-09-06 at 12.16.32_6f394c56.jpg" 
+                         alt="Nada Amna Professional Profile Photo" 
+                         onerror="this.onerror=null; this.src='https://placehold.co/400x400/e5e7eb/1f2937?text=Profile+Image';"
+                         class="w-64 h-64 sm:w-80 sm:h-80 object-cover rounded-full shadow-xl border-4 border-white transform hover:scale-[1.02] transition duration-500"
+                         style="filter: grayscale(10%) contrast(100%);"
+                    >
+                </div>
+
+                <!-- Text Content -->
+                <div class="md:w-2/3 text-center md:text-left">
+                    <h1 class="text-5xl sm:text-6xl font-extrabold leading-tight mb-4 text-gray-900">
+                        Smart Security. <br class="hidden sm:block"> Safer Future.
+                    </h1>
+                    <p class="text-3xl font-medium text-gray-800 mb-2">Nada Amna</p>
+                    <h2 class="text-xl sm:text-2xl font-normal text-gray-500 mb-8">
+                        Computer Science Student | Cybersecurity Passionate Learner
+                    </h2>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                        <a href="#contact" class="inline-flex items-center justify-center px-8 py-3 bg-gray-900 text-white font-semibold rounded-lg hover:bg-gray-700 transition duration-300 transform hover:scale-[1.02]">
+                            Get In Touch
+                        </a>
+                        <a href="#projects" class="inline-flex items-center justify-center px-8 py-3 border border-gray-300 text-gray-800 font-semibold rounded-lg hover:bg-gray-100 transition duration-300 transform hover:scale-[1.02]">
+                            View Projects
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="section-padding">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-extrabold text-center mb-12 text-gray-900">About Me</h2>
+                <div class="content-card p-8 rounded-xl">
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        As a freelance cybersecurity professional and an ambitious Computer Science student, I'm deeply passionate about securing digital systems and developing robust, efficient software. My experience encompasses backend development, sophisticated database management, and hands-on cybersecurity projects, consistently delivering impactful solutions.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        I excel in tackling complex technical challenges using languages like C++, Java, Python, and a wide array of web technologies. My work is focused on architecting advanced cybersecurity solutions, performing detailed vulnerability analysis, and developing proactive network monitoring tools.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        I combine strong communication and critical problem-solving skills to foster effective collaboration. My ultimate goal is to empower businesses and individuals to strengthen their digital security posture and build lasting trust in the digital future.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Education Section (Added from images) -->
+        <section id="education" class="section-padding pt-0">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-extrabold text-center mb-12 text-gray-900">Education</h2>
+                <div class="content-card p-8 rounded-xl flex items-start gap-6">
+                    <i data-lucide="graduation-cap" class="w-8 h-8 text-accent flex-shrink-0 mt-1"></i>
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-1">B.Sc. in Computer Science <span class="text-sm font-normal text-gray-500">(2023 - 2027)</span></h3>
+                        <p class="text-lg text-gray-600 mb-4">Arab Academy for Science, Technology & Maritime Transport (AASTMT)</p>
+                        <ul class="list-disc list-outside text-gray-700 space-y-2 pl-5 text-base">
+                            <li>Completed specialized coursework in algorithms, data structures, system design, and web development.</li>
+                            <li>Applied knowledge in hands-on projects using Java, C++, Python, and database technologies.</li>
+                            <li>Actively participated in cybersecurity training and competitive programming initiatives.</li>
+                            <li>Focused on building a strong foundation that bridges theory with practical, real-world applications.</li>
+                            <li>Cultivating robust skills in cybersecurity practices and secure system design to prepare for industry challenges.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section (Added from images) -->
+        <section id="experience" class="section-padding pt-0">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-extrabold text-center mb-12 text-gray-900">Experience</h2>
+                <div class="content-card p-8 rounded-xl flex items-start gap-6">
+                    <i data-lucide="briefcase" class="w-8 h-8 text-accent flex-shrink-0 mt-1"></i>
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-1">Backend & Data Analytics Intern</h3>
+                        <p class="text-lg text-gray-600 mb-1">ACUD - New Capital</p>
+                        <p class="text-md font-medium text-gray-500">July 2025 - Present</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section-padding pt-0">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-extrabold text-center mb-12 text-gray-900">Skills</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    
+                    <!-- Programming Languages -->
+                    <div class="content-card p-6 rounded-xl hover:shadow-lg transition duration-300">
+                        <div class="flex items-center text-accent mb-4">
+                            <i data-lucide="code" class="w-8 h-8 mr-3"></i>
+                            <h3 class="text-xl font-bold text-gray-800">Programming Languages</h3>
+                        </div>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Proficient in C++, C, Java, and Python for backend and application development. Extensive experience with web technologies including HTML, CSS, JavaScript, PHP, Bootstrap, React, JSP, and Servlets for dynamic web solutions.
+                        </p>
+                    </div>
+
+                    <!-- Databases & Analytics -->
+                    <div class="content-card p-6 rounded-xl hover:shadow-lg transition duration-300">
+                        <div class="flex items-center text-accent mb-4">
+                            <i data-lucide="database" class="w-8 h-8 mr-3"></i>
+                            <h3 class="text-xl font-bold text-gray-800">Databases & Analytics</h3>
+                        </div>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Strong capabilities in SQL, Microsoft SQL Server, and Microsoft Access for robust database design and management. Experienced in data visualization and analysis using Power BI.
+                        </p>
+                    </div>
+
+                    <!-- Cybersecurity -->
+                    <div class="content-card p-6 rounded-xl hover:shadow-lg transition duration-300">
+                        <div class="flex items-center text-accent mb-4">
+                            <i data-lucide="shield-check" class="w-8 h-8 mr-3"></i>
+                            <h3 class="text-xl font-bold text-gray-800">Cybersecurity</h3>
+                        </div>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Solid understanding of Network Security Fundamentals, Encryption & Cryptography, Vulnerability Analysis, and Secure Coding practices to build resilient systems.
+                        </p>
+                    </div>
+
+                    <!-- Soft Skills -->
+                    <div class="content-card p-6 rounded-xl hover:shadow-lg transition duration-300">
+                        <div class="flex items-center text-accent mb-4">
+                            <i data-lucide="users" class="w-8 h-8 mr-3"></i>
+                            <h3 class="text-xl font-bold text-gray-800">Soft Skills</h3>
+                        </div>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Demonstrated abilities in Teamwork & Cross-functional Collaboration, Problem Solving & Critical Thinking, effective Communication & Time Management, and strong Leadership & Adaptability.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services I Provide Section (Added from images/PDF) -->
+        <section id="services" class="section-padding">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-extrabold text-center mb-4 text-gray-900">Services I Provide</h2>
+                <p class="text-center text-lg text-gray-600 mb-12 max-w-3xl mx-auto">
+                    I deliver comprehensive security solutions meticulously crafted to meet the unique needs of diverse organizations, ensuring robust protection and strategic resilience.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    
+                    <!-- Software Development -->
+                    <div class="content-card p-8 rounded-xl hover:shadow-xl transition duration-300">
+                        <i data-lucide="layout-grid" class="w-10 h-10 text-accent mb-4"></i>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">Software Development</h3>
+                        <ul class="list-disc list-outside text-gray-700 space-y-2 pl-5 text-base">
+                            <li>Develop efficient, maintainable applications using Java, Python, and C++.</li>
+                            <li>Apply Object-Oriented Programming (OOP) and design principles for robust solutions.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Web Development -->
+                    <div class="content-card p-8 rounded-xl hover:shadow-xl transition duration-300">
+                        <i data-lucide="globe" class="w-10 h-10 text-accent mb-4"></i>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">Web Development</h3>
+                        <ul class="list-disc list-outside text-gray-700 space-y-2 pl-5 text-base">
+                            <li>Design and build responsive websites with HTML, CSS, JavaScript, React, and Bootstrap.</li>
+                            <li>Develop secure backend systems using PHP, SQL, and Java (Servlets & JSP).</li>
+                        </ul>
+                    </div>
+
+                    <!-- Cybersecurity Solutions -->
+                    <div class="content-card p-8 rounded-xl hover:shadow-xl transition duration-300">
+                        <i data-lucide="lock" class="w-10 h-10 text-accent mb-4"></i>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">Cybersecurity Solutions</h3>
+                        <ul class="list-disc list-outside text-gray-700 space-y-2 pl-5 text-base">
+                            <li>Implement strong security measures including encryption, vulnerability analysis, and secure coding practices.</li>
+                            <li>Create engaging, security-focused projects like escape room challenges and packet sniffers.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Data Analytics & Visualization -->
+                    <div class="content-card p-8 rounded-xl hover:shadow-xl transition duration-300">
+                        <i data-lucide="bar-chart-3" class="w-10 h-10 text-accent mb-4"></i>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">Data Analytics & Visualization</h3>
+                        <ul class="list-disc list-outside text-gray-700 space-y-2 pl-5 text-base">
+                            <li>Design and manage complex databases with SQL Server and Oracle.</li>
+                            <li>Generate clear, actionable data dashboards and insights using Power BI.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section-padding pt-0 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-extrabold text-center mb-4 text-gray-900">Selected Projects</h2>
+                <p class="text-center text-lg text-gray-600 mb-12 max-w-3xl mx-auto">
+                    These projects show how I use technology in different situations.
+                </p>
+                <div class="space-y-12">
+                    
+                    <!-- Project 1: Dopify -->
+                    <div class="content-card p-8 rounded-xl grid grid-cols-1 lg:grid-cols-1 gap-6">
+                        <div>
+                            <h3 class="text-3xl font-bold text-gray-800 mb-2">Project 1: Dopify – Smart Mood-Driven Recommendation App</h3>
+                            <p class="text-sm text-gray-500 mb-4 font-semibold">Java, JSP, Servlets, JDBC, HTML, CSS | Nov 2024 - Dec 2024</p>
+                            <p class="text-gray-700 mb-6">
+                                Dopify is a web app that gives you personalized recommendations based on your mood. It suggests movies, songs, food, and activities to make you feel better.
+                            </p>
+                            <h4 class="text-xl font-bold text-gray-800 mb-4">Key Features</h4>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-4 text-gray-700 text-base">
+                                <ul class="space-y-3">
+                                    <li>Secure Login & Personalization: Log in safely and set up your own profile.</li>
+                                    <li>Flexible Recommendations: Get suggestions for a whole day or just one thing, based on your mood or random picks.</li>
+                                    <li>Automated Notifications: You get custom welcome emails automatically.</li>
+                                    <li>Responsive UI: Modern design that looks good on any device.</li>
+                                </ul>
+                                <ul class="space-y-3">
+                                    <li>Mood Tracking & History: Record your mood and see how it changes over time.</li>
+                                    <li>Smart User Recognition: The app remembers you when you return using cookies.</li>
+                                    <li>Clean User Experience: Easy to use and works well on any device.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Recipal -->
+                    <div class="content-card p-8 rounded-xl grid grid-cols-1 lg:grid-cols-1 gap-6">
+                        <div>
+                            <h3 class="text-3xl font-bold text-gray-800 mb-2">Project 2: Recipal – Recipe Recommendation & Meal Planning Platform</h3>
+                            <p class="text-sm text-gray-500 mb-4 font-semibold">PHP, MySQL, JavaScript, HTML, CSS | Nov 2024 - Dec 2024</p>
+                            <p class="text-gray-700 mb-6">
+                                Recipal is a comprehensive web application designed to simplify meal planning, allowing users to search recipes, save favorites, and generate shopping lists. It features distinct user and administrator interfaces.
+                            </p>
+                            <h4 class="text-xl font-bold text-gray-800 mb-4">Key Features</h4>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-4 text-gray-700 text-base">
+                                <ul class="space-y-3">
+                                    <li>Recipe Discovery & Favorites: Find recipes by type and save your top choices.</li>
+                                    <li>Secure Authentication: Different access levels for users and admins.</li>
+                                    <li>Personalized Experience: The app remembers returning users and their preferences using cookies.</li>
+                                    <li>Responsive UI: Modern design that looks good on any device.</li>
+                                </ul>
+                                <ul class="space-y-3">
+                                    <li>Shopping Cart System: Add ingredients to a cart for easier meal prep.</li>
+                                    <li>Automated Notifications: Get email alerts for new recipes and ingredient restocks.</li>
+                                    <li>Admin Tools: A dashboard for managing recipes.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="section-padding pt-0">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-extrabold text-center mb-12 text-gray-900">Achievements</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Achievement 1 -->
+                    <div class="content-card p-6 rounded-xl relative hover:shadow-lg transition duration-300">
+                        <span class="absolute top-0 right-0 m-4 text-3xl font-extrabold text-gray-200">1</span>
+                        <i data-lucide="trophy" class="w-8 h-8 text-accent mb-4"></i>
+                        <h3 class="text-xl font-bold text-gray-800 mb-1">Digital Egypt Pioneers Initiative (DEPI) – Fortinet Cybersecurity</h3>
+                        <p class="text-sm text-gray-500 mb-3">July 2025</p>
+                        <p class="text-sm text-gray-600">Completed intensive training in cybersecurity fundamentals, threat analysis, and secure systems.</p>
+                    </div>
+
+                    <!-- Achievement 2 -->
+                    <div class="content-card p-6 rounded-xl relative hover:shadow-lg transition duration-300">
+                        <span class="absolute top-0 right-0 m-4 text-3xl font-extrabold text-gray-200">2</span>
+                        <i data-lucide="layout-list" class="w-8 h-8 text-accent mb-4"></i>
+                        <h3 class="text-xl font-bold text-gray-800 mb-1">Meta Front-End Development Diploma</h3>
+                        <p class="text-sm text-gray-500 mb-3">August 2024</p>
+                        <p class="text-sm text-gray-600">Gained comprehensive skills in HTML, CSS, JavaScript, React, Bootstrap, and responsive design.</p>
+                    </div>
+
+                    <!-- Achievement 3 -->
+                    <div class="content-card p-6 rounded-xl relative hover:shadow-lg transition duration-300">
+                        <span class="absolute top-0 right-0 m-4 text-3xl font-extrabold text-gray-200">3</span>
+                        <i data-lucide="code-square" class="w-8 h-8 text-accent mb-4"></i>
+                        <h3 class="text-xl font-bold text-gray-800 mb-1">ECPC Competitive Programming Training</h3>
+                        <p class="text-sm text-gray-500 mb-3">July 2024</p>
+                        <p class="text-sm text-gray-600">Improved problem-solving and algorithmic thinking through advanced competitive programming.</p>
+                    </div>
+                    
+                    <!-- Achievement 4 -->
+                    <div class="content-card p-6 rounded-xl relative hover:shadow-lg transition duration-300">
+                        <span class="absolute top-0 right-0 m-4 text-3xl font-extrabold text-gray-200">4</span>
+                        <i data-lucide="users" class="w-8 h-8 text-accent mb-4"></i>
+                        <h3 class="text-xl font-bold text-gray-800 mb-1">PR Member & Team Leader - AAST Student Council</h3>
+                        <p class="text-sm text-gray-500 mb-3">2023 - 2024</p>
+                        <p class="text-sm text-gray-600">Led public relations campaigns for university events, enhancing communication and leadership skills.</p>
+                    </div>
+
+                    <!-- Achievement 5 -->
+                    <div class="content-card p-6 rounded-xl relative hover:shadow-lg transition duration-300">
+                        <span class="absolute top-0 right-0 m-4 text-3xl font-extrabold text-gray-200">5</span>
+                        <i data-lucide="handshake" class="w-8 h-8 text-accent mb-4"></i>
+                        <h3 class="text-xl font-bold text-gray-800 mb-1">PR Member – Revolution of the Reunion Club</h3>
+                        <p class="text-sm text-gray-500 mb-3">2023 - 2024</p>
+                        <p class="text-sm text-gray-600">Helped with public messaging and promotions, strengthening teamwork and event management skills.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Client & Peer Feedback Section -->
+        <section id="feedback" class="section-padding pt-0">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-extrabold text-center mb-12 text-gray-900">Client & Peer Feedback</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <!-- Feedback 1 -->
+                    <div class="content-card p-6 rounded-xl hover:shadow-lg transition duration-300 quote-style">
+                        <p class="text-gray-700 italic mb-4">
+                            "Nada demonstrates strong dedication to learning and applying new technologies, especially in cybersecurity and backend development."
+                        </p>
+                        <p class="text-sm font-semibold text-gray-500">– Internship Mentor, ACUD</p>
+                    </div>
+
+                    <!-- Feedback 2 -->
+                    <div class="content-card p-6 rounded-xl hover:shadow-lg transition duration-300 quote-style">
+                        <p class="text-gray-700 italic mb-4">
+                            "Highly adaptable and quick to grasp complex concepts, Nada brings strong problem-solving skills and creativity to every project."
+                        </p>
+                        <p class="text-sm font-semibold text-gray-500">– Programming Instructor</p>
+                    </div>
+
+                    <!-- Feedback 3 -->
+                    <div class="content-card p-6 rounded-xl hover:shadow-lg transition duration-300 quote-style">
+                        <p class="text-gray-700 italic mb-4">
+                            "An excellent collaborator with strong communication skills, always proactive in supporting team success."
+                        </p>
+                        <p class="text-sm font-semibold text-gray-500">– Student Council Colleague</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="section-padding">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-4xl font-extrabold mb-4 text-gray-900">Let's Connect</h2>
+                <p class="text-xl text-gray-600 mb-10">Let's secure your future together.</p>
+                
+                <div class="content-card p-8 rounded-xl w-full">
+                    <!-- Contact Details Grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 text-left">
+                        
+                        <!-- Email -->
+                        <div class="space-y-1">
+                            <div class="flex items-center text-gray-800">
+                                <i data-lucide="mail" class="w-6 h-6 mr-3 text-accent"></i>
+                                <span class="text-sm font-medium">Email</span>
+                            </div>
+                            <a href="mailto:nadaamna1@gmail.com" class="text-lg text-gray-700 hover:text-accent transition duration-300 block ml-9">nadaamna1@gmail.com</a>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="space-y-1">
+                            <div class="flex items-center text-gray-800">
+                                <i data-lucide="phone" class="w-6 h-6 mr-3 text-accent"></i>
+                                <span class="text-sm font-medium">Phone</span>
+                            </div>
+                            <a href="tel:+201123979696" class="text-lg text-gray-700 hover:text-accent transition duration-300 block ml-9">+20 112 397 9696</a>
+                        </div>
+                        
+                        <!-- LinkedIn -->
+                        <div class="space-y-1">
+                            <div class="flex items-center text-gray-800">
+                                <i data-lucide="linkedin" class="w-6 h-6 mr-3 text-accent"></i>
+                                <span class="text-sm font-medium">LinkedIn</span>
+                            </div>
+                            <a href="https://linkedin.com/in/nadaamnal" target="_blank" class="text-lg text-gray-700 hover:text-accent transition duration-300 block ml-9">linkedin.com/in/nadaamnal</a>
+                        </div>
+
+                        <!-- GitHub -->
+                        <div class="space-y-1">
+                            <div class="flex items-center text-gray-800">
+                                <i data-lucide="github" class="w-6 h-6 mr-3 text-accent"></i>
+                                <span class="text-sm font-medium">GitHub</span>
+                            </div>
+                            <a href="https://github.com/NadaAbdelaziz1" target="_blank" class="text-lg text-gray-700 hover:text-accent transition duration-300 block ml-9">github.com/NadaAbdelaziz1</a>
+                        </div>
+
+                    </div>
+                    <!-- Resume/CV Button (Kept in original contact style) -->
+                    <div class="mt-8 pt-6 border-t border-gray-100 text-center">
+                        <a href="#" class="inline-flex items-center justify-center px-8 py-3 border border-gray-300 text-gray-800 font-semibold rounded-lg hover:bg-gray-100 transition duration-300 transform hover:scale-[1.02]" onclick="alert('This link would lead to your downloadable CV/Resume.')">
+                            <i data-lucide="file-text" class="w-5 h-5 mr-2"></i>
+                            Download Resume/CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white py-12 mt-12 border-t border-gray-200 text-center">
+        <h3 class="text-3xl font-extrabold text-gray-900 mb-4">Thank You!</h3>
+        <p class="text-lg text-gray-700 mb-8">I appreciate your time and interest in my work. Let's connect and build a safer future together.</p>
+        <p class="text-sm text-gray-500">&copy; 2025 Nada Amna. All rights reserved.</p>
+    </footer>
+
+    <!-- Script to initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
